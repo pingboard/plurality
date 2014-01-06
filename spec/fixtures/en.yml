@@ -1,0 +1,15 @@
+en:
+  correct:
+    email:
+      subject:
+        one: "%{first} was added"
+        two: "%{first} and %{second} were added"
+        three: "%{first}, %{second} and %{third} were added"
+        four: "%{first} and %{additional} others were added"
+        other: "%{first}, %{second} and %{additional} others were added"
+  missing:
+    email:
+      subject:
+        one: "%{first} was added"
+        three: "%{first}, %{second} and %{third} were added"
+        other: "%{first}, %{second} and %{additional} others were added"
