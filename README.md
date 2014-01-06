@@ -37,7 +37,8 @@ require 'plurality'
 
 users = %w(Evan Rob Bill Josh)
 
-Plurality.t 'email.subject', nouns: users
+Plurality.t 'email.subject', nouns: users #=> "Evan, Rob and 3 others were added"
+
 ```
 
 You may also pass additional options that'll be passed through to `I18n.translate` assuming they don't conflict with the reserved tokens.
