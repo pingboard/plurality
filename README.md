@@ -21,7 +21,7 @@ Or install it yourself as:
 Plurality relies on on I18n's backend for storing the plural forms.  It also follows I18n's own conventions for storing plurals with the added exception of being able to pluralize up to 1000 sentences instead of the the limitation of the current language.
 
 If you are using Simple backend then below is what your `en.yml` would look like.  The tokens are the ordinals representation of where the noun falls in the array.  They are calculated by the gem [`numbers_and_words`](https://github.com/kslazarev/numbers_and_words).  The `additonal` token is a special one that is calculated based on the number of nouns minus the ordinal tokens used. 
-```
+``` yaml
 en:
   email:
     subject:
@@ -32,7 +32,7 @@ en:
 
 Then you simply call `Plurality.t` or `Plurality.translate` with the array of nouns and it'll spit out the rest for you.  
 
-```
+``` ruby
 require 'plurality'
 
 users = %w(Evan Rob Bill Josh)
