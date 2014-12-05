@@ -30,7 +30,7 @@ module Plurality
       string = translations[:other]
     end
 
-    raise MissingPluralData, "Missing for #{WORDS[count]} nouns" if string.nil?
+    raise MissingPluralData, "Missing for #{WORDS[count] || count} nouns" if string.nil?
 
     options[:scope] = generate_scope key, options[:scope]  
     options[:additional] = calculate_additonal(count, string)
